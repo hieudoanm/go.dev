@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "golang.go",
+  "editor.insertSpaces": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.wordWrap": "off",
+  "gopls": {
+    "experimentalWorkspaceModule": true
+  }
+}
