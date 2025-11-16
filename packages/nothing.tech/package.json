@@ -77,5 +77,5 @@
     "webpack": "5.102.1",
     "webpack-cli": "6.0.1"
   },
-  "packageManager": "pnpm@10.20.0"
+  "packageManager": "pnpm@10.22.0"
 }
