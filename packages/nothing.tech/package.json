@@ -65,7 +65,7 @@
     "@webpack-cli/generators": "3.0.7",
     "eslint": "9.39.1",
     "globals": "16.5.0",
-    "nodemon": "3.1.10",
+    "nodemon": "3.1.11",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.7.1",
     "prisma": "6.19.0",
