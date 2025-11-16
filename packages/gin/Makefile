@@ -5,9 +5,9 @@ vet:
 	go vet ./...
 
 run:
-	go run main.go
+	go run src/main.go
 
 build:
 	go fmt ./...
 	go vet ./...
-	go build -o ./bin/main ./main.go
+	go build -o ./bin/main ./src/main.go
