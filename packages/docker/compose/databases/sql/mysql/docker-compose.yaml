@@ -1,0 +1,36 @@
+services:
+  mysql:
+    image: mysql:9.5 # Pin to a stable version
+    container_name: mysql
+    hostname: mysql
+    restart: unless-stopped
+    networks:
+      - backend # Internal network for multi-service setup
+    ports:
+      - "3306:3306" # Only expose if necessary
+    environment:
+      MYSQL_ROOT_PASSWORD: StrongRootPassword123! # Strong root password
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: appuser # Non-root user
+      MYSQL_PASSWORD: StrongUserPassword123! # Password for non-root user
+    volumes:
+      - mysql_data:/var/lib/mysql
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 512M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  mysql_data:
+    driver: local
+
+networks:
+  backend:
+    driver: bridge
