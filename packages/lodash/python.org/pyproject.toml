@@ -1,0 +1,10 @@
+[project]
+name = "lodash"
+version = "0.0.1"
+description = "lodash"
+readme = "README.md"
+requires-python = "==3.14.0"
+dependencies = [
+    "black==25.11.0",
+    "ruff==0.14.5",
+]
