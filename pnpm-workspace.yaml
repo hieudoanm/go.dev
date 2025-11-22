@@ -1,4 +1,3 @@
 packages:
-  - "packages/**"
-  - "!packages/node.js/frontend/browser/angular"
-  - "!packages/node.js/frontend/documentation/react/gatsby.js"
+  - 'packages/**'
+  - '!packages/documentation/react/gatsby.js'
